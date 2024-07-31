@@ -21,31 +21,32 @@ It has three functions:
   * Offline: Open your offline IDE (like VS Code). Create a file with a `.js` extension and copy-paste the code provided below.
 
 ```javascript
-const nfts = [];
+// create a variable to hold your NFT's
 
-function mintNFT(iname, iuid, iclass, isec) {
-    const nft = {
-        name: iname,
-        uid: iuid,
-        class: iclass,
-        sec: isec
+var Nfts = []
+
+// this function will take in some values as parameters, create an
+// NFT object using the parameters passed to it for its metadata, 
+// and store it in the variable above.
+function mintNFT (name, age, accessory , nftAddress) {
+    nftAddress = {
+        "name": name,
+        "age" : parseInt(age) ,
+        "accessory": accessory,
+        "address": nftAddress,
     }
-    nfts.push(nft);
-    console.log("Minted: " + iname);
+
+    Nfts.push(nftAddress);
+    
 }
 
-function listNFTs() {
-    for (let i = 0; i < nfts.length; i++) {
-        console.log("\nID\t: " + (i + 1));
-        console.log("Name\t: " + nfts[i].name);
-        console.log("Uid\t: " + nfts[i].uid);
-        console.log("Class\t: " + nfts[i].class);
-        console.log("Sec\t: " + nfts[i].sec);
+// create a "loop" that will go through an "array" of NFT's
+// and print their metadata with console.log()
+function listNFTs () {
+    for(i = 0 ; i < Nfts.length ; i++){
+        console.log("name " + Nfts[i]["name"],", age " + Nfts[i]["age"],", accessory " +Nfts[i]["accessory"],", address " +Nfts[i]["address"]  );
     }
-}
 
-function getTotalSupply() {
-    console.log("\nTotal number of NFTS: " + nfts.length);
 }
 
 ```
@@ -53,21 +54,18 @@ function getTotalSupply() {
 * To interact with this program, you have to call its functions. This can be done by copying and pasting the snippet provided below or using it as a reference to call the functions in your own way.
 
 ```javascript
-mintNFT("Aayush Yash", "21BCS10420", "908", "A");
-mintNFT("Vishal Yadav", "21BCS10424", "908", "B");
-mintNFT("Abhinav Pandey", "21BCS10434", "908", "B");
-mintNFT("Ayush Prakash", "21BCS10437", "908", "A");
+mintNFT("chimpu",18,"banana","12ashd");
+mintNFT("chinki",19,"Gun","49dashd");
+console.log("Nfts metadata:")
 listNFTs();
 getTotalSupply();
 ```
 
 ## Authors
 
-[Aayush Yash](https://www.linkedin.com/in/aayush-yash "www.linkedin.com/in/aayush-yash")
+**Vansh Pratap**
 
 ## Additional
-
-[Link](https://github.com/Aayushyaash/Metacrafters-Summer-Training "https://github.com/Aayushyaash/Metacrafters-Summer-Training") to my Metacrafters summer training repository.
 
 [Link](https://www.loom.com/share/8a4fad3659a248aea78565d2ae35297b?sid=899fc21f-07ea-4f8a-914a-490f2203c9e9 "https://www.loom.com/share/8a4fad3659a248aea78565d2ae35297b?sid=899fc21f-07ea-4f8a-914a-490f2203c9e9") to my video explanation.
 
