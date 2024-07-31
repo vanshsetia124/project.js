@@ -67,7 +67,7 @@ getTotalSupply();
 
 ## Additional
 
-[Link](https://www.loom.com/share/8a4fad3659a248aea78565d2ae35297b?sid=899fc21f-07ea-4f8a-914a-490f2203c9e9 "https://www.loom.com/share/8a4fad3659a248aea78565d2ae35297b?sid=899fc21f-07ea-4f8a-914a-490f2203c9e9") to my video explanation.
+[Link](#addYourLoomVidoeLinkHere") to my video explanation.
 
 ## License
 
