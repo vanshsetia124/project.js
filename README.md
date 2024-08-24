@@ -40,6 +40,11 @@ function mintNFT (name, age, accessory , nftAddress) {
     
 }
 
+// print the total number of NFTs we have minted to the console
+function getTotalSupply() {
+    console.log("\nTotal NFTs Minted: " + Nfts.length);
+}
+
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
@@ -48,7 +53,6 @@ function listNFTs () {
     }
 
 }
-
 ```
 
 * To interact with this program, you have to call its functions. This can be done by copying and pasting the snippet provided below or using it as a reference to call the functions in your own way.
