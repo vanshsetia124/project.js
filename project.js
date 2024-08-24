@@ -10,6 +10,8 @@ Assessment Requirements
 
 // create a variable to hold your NFT's
 
+// create a variable to hold your NFT's
+
 var Nfts = []
 
 // this function will take in some values as parameters, create an
@@ -27,6 +29,11 @@ function mintNFT (name, age, accessory , nftAddress) {
     
 }
 
+// print the total number of NFTs we have minted to the console
+function getTotalSupply() {
+    console.log("\nTotal NFTs Minted: " + Nfts.length);
+}
+
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
@@ -36,13 +43,6 @@ function listNFTs () {
 
 }
 
-// print the total number of NFTs we have minted to the console
-function getTotalSupply() {
-    console.log("Total supplies:" + Nfts.length);
-
-}
-
-// call your functions below this line
 mintNFT("chimpu",18,"banana","12ashd");
 mintNFT("chinki",19,"Gun","49dashd");
 console.log("Nfts metadata:")
